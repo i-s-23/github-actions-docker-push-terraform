@@ -33,7 +33,7 @@ jobs:
             value=latest
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: selenium
+          ECR_REPOSITORY: python-test
       - name: docker build and push ECR
         uses: docker/build-push-action@v5.1.0
         with:
