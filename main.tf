@@ -35,7 +35,7 @@ resource "aws_iam_policy" "ecr_push_policy" {
 
 module "oidc_github" {
   source  = "unfunco/oidc-github/aws"
-  version = "2.0.1"
+  version = "2.0.2"
 
   github_repositories = [
     "${var.github_organization}/${var.github_repository}"
