@@ -25,7 +25,7 @@ jobs:
       - run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#${GITHUB_REPOSITORY_OWNER}/}" >> $GITHUB_ENV
       - name: Set up meta data
         id: meta
-        uses: docker/metadata-action@v5.8.0
+        uses: docker/metadata-action@v5.9.0
         with:
           images: |
             ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}
